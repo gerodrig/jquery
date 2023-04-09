@@ -40,7 +40,7 @@ export const pages = {
     <hr>
       <div class="row">
         <div class="col-sm-4">
-           <img src="src/assets/nophoto.jpeg" alt="" class="img-circle" />
+           <img src="/src/assets/nophoto.jpeg" alt="" class="img-circle" />
         </div>
         <div class="col-sm-5">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iure ad harum dignissimos magnam alias a iste saepe quam ipsum, sed, pariatur maiores modi! Laboriosam, dolorem. Et doloribus harum quo?</p>
@@ -66,7 +66,7 @@ export const pages = {
         <button id="button1" class="btn btn-primary">Click Event</button>
         <br>
 
-        <img src="src/assets/chinchilla.jpeg" alt="chinchilla" class="chin mt-5" style="width: '200px'; height: 200px;" />
+        <img src="/src/assets/chinchilla.jpeg" alt="chinchilla" class="chin mt-5" style="width: '200px'; height: 200px;" />
 
         <br>
 
@@ -280,7 +280,7 @@ export const pages = {
 	
 
 	<div class="divPreloader">
-		<img src="src/assets/loading.gif" class="imgLoader img-fluid">
+		<img src="/src/assets/loading.gif" class="imgLoader img-fluid">
 	</div> 
 	
 	<div class="divPreview">
@@ -329,10 +329,10 @@ export const pages = {
 	<hr>
     <h4>Hover over the images to check type</h4>
     <div class="container d-flex flex-column">
-    <img src="src/assets/1.jpg" class="img-fluid" data-type="jpg">
+    <img src="/src/assets/1.jpg" class="img-fluid" data-type="jpg">
     <br>
     <br>
-    <img src="src/assets/2.png" class="img-fluid" data-type="png">
+    <img src="/src/assets/2.png" class="img-fluid" data-type="png">
     <br>
     <br>
     <div>
@@ -354,12 +354,12 @@ export const pages = {
 		    <section class="panel">
 		        <div class="panel-body">
 					
-					<img src="src/assets/eshop/shirts/thumbs/white.jpg" class="imgThumb img-thumbnail" data-color="white">
-					<img src="src/assets/eshop/shirts/thumbs/gray.jpg" class="imgThumb img-thumbnail" data-color="gray">
-					<img src="src/assets/eshop/shirts/thumbs/black.jpg" class="imgThumb img-thumbnail" data-color="black">
-					<img src="src/assets/eshop/shirts/thumbs/red.jpg" class="imgThumb img-thumbnail" data-color="red">
-					<img src="src/assets/eshop/shirts/thumbs/pink.jpg" class="imgThumb img-thumbnail" data-color="pink">
-					<img src="src/assets/eshop/shirts/thumbs/green.jpg" class="imgThumb img-thumbnail" data-color="green">
+					<img src="/src/assets/eshop/shirts/thumbs/white.jpg" class="imgThumb img-thumbnail" data-color="white">
+					<img src="/src/assets/eshop/shirts/thumbs/gray.jpg" class="imgThumb img-thumbnail" data-color="gray">
+					<img src="/src/assets/eshop/shirts/thumbs/black.jpg" class="imgThumb img-thumbnail" data-color="black">
+					<img src="/src/assets/eshop/shirts/thumbs/red.jpg" class="imgThumb img-thumbnail" data-color="red">
+					<img src="/src/assets/eshop/shirts/thumbs/pink.jpg" class="imgThumb img-thumbnail" data-color="pink">
+					<img src="/src/assets/eshop/shirts/thumbs/green.jpg" class="imgThumb img-thumbnail" data-color="green">
 
 		        </div>
 		    </section>
@@ -369,7 +369,7 @@ export const pages = {
 		    <section class="panel">
 		        <div class="panel-body">
 					
-					<img id="shirtColor" src="src/assets/eshop/shirts/large/white.jpg" data-color="white">
+					<img id="shirtColor" src="/src/assets/eshop/shirts/large/white.jpg" data-color="white">
 
 		        </div>
 		    </section>
@@ -386,11 +386,11 @@ export const pages = {
 					</p>
 					<p>
 						<h4>Rating</h4>
-						<img src="src/assets/eshop/star1.png" class="imgRating">
-						<img src="src/assets/eshop/star1.png" class="imgRating">
-						<img src="src/assets/eshop/star1.png" class="imgRating">
-						<img src="src/assets/eshop/star1.png" class="imgRating">
-						<img src="src/assets/eshop/star2.png" class="imgRating">
+						<img src="/src/assets/eshop/star1.png" class="imgRating">
+						<img src="/src/assets/eshop/star1.png" class="imgRating">
+						<img src="/src/assets/eshop/star1.png" class="imgRating">
+						<img src="/src/assets/eshop/star1.png" class="imgRating">
+						<img src="/src/assets/eshop/star2.png" class="imgRating">
 						<br>
 						<br>
 					</p>
@@ -524,10 +524,10 @@ exercise17: `
 
 <div class="slideShow">
   <ul>
-    <li><img src="src/assets/slideshow/slide1.png"></li>
-    <li><img src="src/assets/slideshow/slide2.png"></li>
-    <li><img src="src/assets/slideshow/slide3.png"></li>
-    <li><img src="src/assets/slideshow/slide4.png"></li>
+    <li><img src="/src/assets/slideshow/slide1.png"></li>
+    <li><img src="/src/assets/slideshow/slide2.png"></li>
+    <li><img src="/src/assets/slideshow/slide3.png"></li>
+    <li><img src="/src/assets/slideshow/slide4.png"></li>
   </ul>
 </div>
 <button data-action="prev" class="btn btn-primary slideButton">Prev</button>
@@ -565,10 +565,10 @@ exercise18: `
 
 <div class="slideShow">
   <ul>
-    <li><img src="src/assets/slideshow/slide1.png"></li>
-    <li><img src="src/assets/slideshow/slide2.png"></li>
-    <li><img src="src/assets/slideshow/slide3.png"></li>
-    <li><img src="src/assets/slideshow/slide4.png"></li>
+    <li><img src="/src/assets/slideshow/slide1.png"></li>
+    <li><img src="/src/assets/slideshow/slide2.png"></li>
+    <li><img src="/src/assets/slideshow/slide3.png"></li>
+    <li><img src="/src/assets/slideshow/slide4.png"></li>
   </ul>
 </div>
 
@@ -742,7 +742,7 @@ exercise24: `
   </div>
 </div>
 
-<link rel="stylesheet" href="src/styles/weather.css">
+<link rel="stylesheet" href="/src/styles/weather.css">
 `,
 };
 
