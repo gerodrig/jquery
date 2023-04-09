@@ -1,0 +1,39 @@
+{
+  "active": false,
+  "balance": "$3,463.46",
+  "photo": "http://placehold.it/100x100",
+  "age": 29,
+  "eyeColor": "brown",
+  "name": "Mimi Martinez",
+  "gender": "female",
+  "company": "Bank",
+  "email": "karenmelissa@bank.com",
+  "phone": "+1 (979) 434-3163",
+  "address": "340 Debevoise Avenue, Grayhawk, Rhode Island, 3467",
+  "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "registered": "01-10-2005",
+  "latitude": -36.809208,
+  "longitude": -125.031516,
+  "tags": [
+      "female",
+      "married",
+      "student",
+      "college",
+      "cooking",
+      "driving"
+  ],
+  "friends": [
+      {
+          "id": 0,
+          "name": "Sandra Lopez"
+      },
+      {
+          "id": 1,
+          "name": "Karolina Ortez"
+      },
+      {
+          "id": 2,
+          "name": "Daniel Chinchilla"
+      }
+  ]
+}
