@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/src/assets/bigBoxNotification/background.jpg');
+    background: url('/public/bigBoxNotification/background.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

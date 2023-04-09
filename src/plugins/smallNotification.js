@@ -7,7 +7,7 @@ export const smallNotification = (options) => {
       subtitle: undefined,
       content: undefined,
       fa: 'fa-solid fa-bell fa-shake fa-xl',
-      img: '/src/assets/smallNotification/chinchilla.jpeg',
+      img: '/public/smallNotification/chinchilla.jpeg',
       timeout: 2000,
     },
     options

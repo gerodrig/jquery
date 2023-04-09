@@ -1,5 +1,5 @@
-import javascriptLogo from '/src/assets/javascript.svg';
-import jqueryLogo from '/src/assets/jquery.svg';
+import javascriptLogo from '/public/javascript.svg';
+import jqueryLogo from '/public/jquery.svg';
 
 export const pagesAdvanced = {
   component: `
@@ -436,7 +436,7 @@ export const pagesAdvanced = {
         title: 'Simplify Ajax Requests',
         content: `
           <h1>Simplify Ajax Requests</h1>
-          <p><The code makes an asynchronous GET request to fetch data from the 1.json file located in the /src/assets/data/ directory. If the request is successful, the message property of the returned data object is logged to the console and a new code component is created with the message as its content, which is then appended after the first p element in the document body. If the request fails due to the file not existing, a message is logged to the console./p>
+          <p><The code makes an asynchronous GET request to fetch data from the 1.json file located in the /public/data/ directory. If the request is successful, the message property of the returned data object is logged to the console and a new code component is created with the message as its content, which is then appended after the first p element in the document body. If the request fails due to the file not existing, a message is logged to the console./p>
         `
       },
       {
@@ -608,7 +608,7 @@ export const pagesAdvanced = {
           <p>The code is a demonstration of how to use jQuery to show and hide a preloader animation while performing an AJAX request to fetch data from a web API. When the AJAX request is started, the preloader is faded in, and when it is completed, the preloader is delayed by one second and then faded out. If the AJAX request is successful, the response data is logged to the console, and a new HTML element with the ID "users" is added to the page, displaying the JSON data in a formatted code block. If the AJAX request fails, an alert message is displayed.</p>
 
           <div id="preloader" class="text-center">
-            <img src="/src/assets/advanced/preloader.gif" alt="preloader">
+            <img src="/public/advanced/preloader.gif" alt="preloader">
           </div>
           <div id="users"></div>
 
@@ -1184,8 +1184,8 @@ export const pagesAdvanced = {
           <p>The code snippet loads the "TwentyTwenty" jQuery plugin, which enables a before-and-after image comparison effect. It appends the required CSS and JavaScript files to the head and body of the document respectively, and initializes the plugin on the "#container" element once the window is fully loaded.</p>
       
           <div id="container" class="twentytwenty-container">
-            <img src="/src/assets/advanced/re4.jpg" alt="image1"  >
-            <img src="/src/assets/advanced/re4-2.jpg" alt="image2" >
+            <img src="/public/advanced/re4.jpg" alt="image1"  >
+            <img src="/public/advanced/re4-2.jpg" alt="image2" >
           </div>
 
           <style>
