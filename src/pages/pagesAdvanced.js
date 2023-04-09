@@ -27,7 +27,7 @@ export const pagesAdvanced = {
 
     
     </div>
-    <link rel="stylesheet" href="src/styles/pagesAdvanced.css" />`,
+    <link rel="stylesheet" href="/styles/pagesAdvanced.css" />`,
     section1: {
       title: 'DOM Manipulation',
       subTopics: [

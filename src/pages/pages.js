@@ -633,7 +633,7 @@ exercise19: `
 
 
 </div>
-<link rel="stylesheet" href="/src/styles/bigBoxContainer.css">
+<link rel="stylesheet" href="/styles/bigBoxContainer.css">
 `,
 exercise20: `
 <div class="container text-center">
@@ -742,7 +742,7 @@ exercise24: `
   </div>
 </div>
 
-<link rel="stylesheet" href="/src/styles/weather.css">
+<link rel="stylesheet" href="/styles/weather.css">
 `,
 };
 
