@@ -1,4 +1,4 @@
-<p align="center" style="background-color: white;">
+<p align="center" style="background-color: #ffff;">
   <a href="https://jquery.com/" target="blank"><img width="512" alt="JQuery-Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/512px-JQuery-Logo.svg.png" /></a>
 </p>
 
