@@ -7,7 +7,7 @@ export const smallNotification = (options) => {
       subtitle: undefined,
       content: undefined,
       fa: 'fa-solid fa-bell fa-shake fa-xl',
-      img: '/public/smallNotification/chinchilla.jpeg',
+      img: '/public/images/smallNotification/chinchilla.jpeg',
       timeout: 2000,
     },
     options
@@ -17,7 +17,7 @@ export const smallNotification = (options) => {
     '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />'
   );
 
-  $('head').append('<link rel="stylesheet" href="/styles/smallNotification.css">');
+  $('head').append('<link rel="stylesheet" href="/public/styles/smallNotification.css">');
 
   //append the notification to the body
   $('body').append('<div class="smallNotification"></div>');

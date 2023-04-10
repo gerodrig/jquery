@@ -148,7 +148,7 @@ export const routerAdvanced = {
             if(this.hostname != location.hostname ){
                 $(this).attr('target', '_blank');
                 //add icon image
-                $(this).append('<img id="external" src="/public/advanced/external-links.png" />');
+                $(this).append('<img id="external" src="/public/images/advanced/external-links.png" />');
                 $('#external').css({
                     'width': '20px',
                     'margin-left': '5px',
@@ -751,9 +751,9 @@ export const routerAdvanced = {
 
     const script = `(() => {
         ///create 2 anchor tags with assets to be downloaded
-        $('p').last().after('<a href="/public/chinchilla.jpeg" target="_blank">Chinchilla 1</a>');
-        $('a').after('<a href="/public/chinchilla2.jpeg" target="_blank">Chinchilla 2</a>');
-        $('a').last().after('<a href="/public/1.jpg" target="_blank">Image 1</a>');
+        $('p').last().after('<a href="/public/images/chinchilla.jpeg" target="_blank">Chinchilla 1</a>');
+        $('a').after('<a href="/public/images/chinchilla2.jpeg" target="_blank">Chinchilla 2</a>');
+        $('a').last().after('<a href="/public/images/1.jpg" target="_blank">Image 1</a>');
 
         // add class fetchsize to all anchor tags
         $('a').addClass('fetchsize');
@@ -1116,7 +1116,7 @@ export const routerAdvanced = {
       
             $('#chatNotification1').on('click', function () {
             chatNotification({
-                image: '/public/chatNotification/Ethan.jpeg',
+                image: '/public/images/chatNotification/Ethan.jpeg',
                 name: 'Mimi Martinez',
                 location: 'Airdrie, AB'
                 });
@@ -1129,7 +1129,7 @@ export const routerAdvanced = {
       
             $('#chatNotification1').on('click', function () {
             chatNotification({
-                image: '/public/chatNotification/Ethan.jpeg',
+                image: '/public/images/chatNotification/Ethan.jpeg',
                 name: 'Mimi Martinez',
                 location: 'Airdrie, AB'
                 });
@@ -1328,7 +1328,7 @@ export const routerAdvanced = {
                 ctx.drawImage(this, 0, 0);
             });
 
-            image.attr('src', '/public/chinchilla.jpeg');
+            image.attr('src', '/public/images/chinchilla.jpeg');
 
             $('#btn').on('click', function () {
                 const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -1414,7 +1414,7 @@ export const routerAdvanced = {
             //create 2 buttons one saying show and other hide
             $('<button type="button" id="show">Show</button>').css({marginLeft: '20px'}).appendTo('#buttons');
             $('<button type="button" id="hide">Hide</button>').css({marginLeft: '20px'}).appendTo('#buttons');
-            $('<img id="chinchi" src="/public/chinchilla2.jpeg" />').css({width: '200px', height: '200px', marginTop: '20px'}).appendTo('#container');
+            $('<img id="chinchi" src="/public/images/chinchilla2.jpeg" />').css({width: '200px', height: '200px', marginTop: '20px'}).appendTo('#container');
 
             jQuery.easing.bounce = function (x, t, b, c, d) {
                 if ((t /= d) < (1 / 2.75)) {
@@ -1517,7 +1517,7 @@ export const routerAdvanced = {
             //create a button to toggle image and insertbefore container
             $('<button type="button" id="toggle">Show / Hide</button>').insertBefore('#container');
             //insert image in container
-            $('<img id="chinchilla" src="/public/smallNotification/chinchilla.jpeg" />').css({width: '200px', height: '200px', marginTop: '20px', borderRadius: '80px'}).appendTo('#container');
+            $('<img id="chinchilla" src="/public/images/smallNotification/chinchilla.jpeg" />').css({width: '200px', height: '200px', marginTop: '20px', borderRadius: '80px'}).appendTo('#container');
 
             //toggle using proxy method:
             $('#toggle').on('click', $.proxy(function () {
@@ -1585,7 +1585,7 @@ export const routerAdvanced = {
 
         const script = `(() => {
             //add modernizer library
-            $('<script src="/src/libs/modernizr-custom.js"></script>').appendTo('head');
+            $('<script src="/libs/modernizr/modernizr-custom.js"></script>').appendTo('head');
 
             //get all the classes in html tag
             const classes = $('html').attr('class').trim().split(' ');
@@ -1803,7 +1803,7 @@ export const routerAdvanced = {
                 
                 $('<img>').attr({
                     id: 'chinnie',
-                    src: '/public/chinchilla3.png',                   
+                    src: '/public/images/chinchilla3.png',                   
                 }).appendTo('#container');
                 
                 Caman('#chinnie', function () {
@@ -1816,7 +1816,7 @@ export const routerAdvanced = {
 
                   console.log(document.getElementById('chinnie'));
 
-                $('<img>').attr('src', '/public/chinchilla3.png').appendTo('#container');
+                $('<img>').attr('src', '/public/images/chinchilla3.png').appendTo('#container');
             };
 
             let changed = true;
@@ -2070,7 +2070,7 @@ export const routerAdvanced = {
             const options = ['chinchilla', 'rabbit', 'degu', 'hamster', 'guinea pig'];
             const loadPlugin = () => {
                 //get css
-                $('head').append('<link rel="stylesheet" type="text/css" href="/src/libs/chosen/chosen.css">');
+                $('head').append('<link rel="stylesheet" type="text/css" href="/libs/chosen/chosen.css">');
                 const select = $('<select>').attr('id', 'select').css({
                     width: '300px',
                 }).appendTo('#container');
@@ -2092,7 +2092,7 @@ export const routerAdvanced = {
                 });
             };
             //add plugin to jquery
-            $.getScript('/src/libs/chosen/chosen.jquery.js', loadPlugin )
+            $.getScript('/libs/chosen/chosen.jquery.js', loadPlugin )
         })();`;
         scriptDiv2(script);
     },
@@ -2121,7 +2121,7 @@ export const routerAdvanced = {
                 });
             };
             //import script 
-            $.getScript('/src/libs/blur/blur.js', blurLoaded);
+            $.getScript('/libs/blur/blur.js', blurLoaded);
         })();`;
         scriptDiv2(script);
     },
@@ -2138,7 +2138,7 @@ export const routerAdvanced = {
             
 
             //load qrcode library
-            $.getScript('/src/libs/qr/jquery-qr.js', loadedQr);
+            $.getScript('/libs/qr/jquery-qr.js', loadedQr);
         })();`;
         scriptDiv2(script);
     },
@@ -2151,7 +2151,7 @@ export const routerAdvanced = {
 
                 //append image to container
                 const img = $('<img>').attr({
-                    src: '/public/advanced/faces.jpeg',
+                    src: '/public/images/advanced/faces.jpeg',
                     id: 'image',
                     class: 'image',
                 }).appendTo('#container');    
@@ -2188,7 +2188,7 @@ export const routerAdvanced = {
 
 
             //import script 
-            $.getScript('/src/libs/facedetection/jquery.facedetection.min.js', loaded);
+            $.getScript('/libs/facedetection/jquery.facedetection.min.js', loaded);
 
         })();`;
         scriptDiv2(script);
@@ -2200,7 +2200,7 @@ export const routerAdvanced = {
             const loaded = () => {
                 //insert image to container
                 const $img = $('<img id="#image">').attr({
-                    src: '/public/chinchilla3.png',
+                    src: '/public/images/chinchilla3.png',
                     style: 'width: 50%; height: 50%; cursor: pointer;',
 
                 }).appendTo('#container');
@@ -2301,7 +2301,7 @@ export const routerAdvanced = {
 
         const script = `(() => {
             //import script and append to body
-            $('body').append('<script src="/src/libs/knob/jquery-knob.js"></script>');
+            $('body').append('<script src="/libs/knob/jquery-knob.js"></script>');
 
             //create an input
             let counter = 0;
@@ -2344,14 +2344,14 @@ export const routerAdvanced = {
 
     const script = `(() => {
             //append money.js script to body
-            $('body').append('<script src="/src/libs/moneyjs/moneyjs.js"></script>');
+            $('body').append('<script src="/libs/moneyjs/moneyjs.js"></script>');
 
             // $.get('https://openexchangerates.org/api/latest.json', {app_id: 'API_KEY'}, function(data) {
             //     const {rates} = data;
             //     console.log(JSON.stringify(rates));
             // });
             //get rates from JSON File
-            $.getJSON('/src/libs/moneyjs/rates.json', function(data) {
+            $.getJSON('/libs/moneyjs/rates.json', function(data) {
                 fx.rates = data;
                 fx.base = 'USD';
     
@@ -2419,7 +2419,7 @@ export const routerAdvanced = {
             $('body').append('<script src="https://maps.google.com/maps/api/js?sensor=true"></script>');
 
             //add gmaps script
-            $('body').append('<script src="/src/libs/maps/gmaps.js"></script>');
+            $('body').append('<script src="/libs/maps/gmaps.js"></script>');
 
             //  new GMaps({
             //     div: '#container',
@@ -2447,9 +2447,9 @@ export const routerAdvanced = {
 
         const script = `(() => {
             //add css to head
-            $('head').append('<link rel="stylesheet" href="/src/libs/stacktable/stacktable.css">');
+            $('head').append('<link rel="stylesheet" href="/libs/stacktable/stacktable.css">');
             //add script to body
-            $('body').append('<script src="/src/libs/stacktable/stacktable.js"></script>');
+            $('body').append('<script src="/libs/stacktable/stacktable.js"></script>');
 
             const columns = [ 'First Name', 'Last Name', 'Age', 'Location', 'Phone' ];
 
@@ -2520,14 +2520,14 @@ export const routerAdvanced = {
 
         (() => {
             //load css
-            $('head').append('<link rel="stylesheet" href="/src/libs/twentytwenty/twentytwenty.css">');
+            $('head').append('<link rel="stylesheet" href="/libs/twentytwenty/twentytwenty.css">');
             $(window).on('load', function() {
                 $("#container").twentytwenty();
             });
 
             //load js
-            $('body').append('<script src="/src/libs/twentytwenty/jquery.event.move.js"></script>');
-            $('body').append('<script src="/src/libs/twentytwenty/jquery.twentytwenty.js"></script>');
+            $('body').append('<script src="/libs/twentytwenty/jquery.event.move.js"></script>');
+            $('body').append('<script src="/libs/twentytwenty/jquery.twentytwenty.js"></script>');
         
         })();
         
@@ -2537,7 +2537,7 @@ export const routerAdvanced = {
 
         const script = `(() => {
              const loadContent = function(){
-                 const $img = $('<img>').attr('src', '/public/chinchilla3.png').appendTo('#container');
+                 const $img = $('<img>').attr('src', '/public/images/chinchilla3.png').appendTo('#container');
 
                    //create a selector with filters
                 const filters = ['selectFilter', 'vintage', 'lomo', 'clarity', 'sinCity', 'sunrise', 'crossProcess', 'orangePeel', 'love', 'grungy', 'jarques', 'pinhole', 'oldBoot', 'glowingSun', 'hazyDays', 'herMajesty', 'nostalgia', 'hemingway', 'concentrate'];
@@ -2586,7 +2586,7 @@ export const routerAdvanced = {
 
         const script = `(() => {
             //load script keymaster
-            $('body').append('<script src="/src/libs/keymaster/keymaster.js"></script>');
+            $('body').append('<script src="/libs/keymaster/keymaster.js"></script>');
 
             const $container = $('#container');
 

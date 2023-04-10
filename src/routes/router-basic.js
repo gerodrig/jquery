@@ -82,7 +82,7 @@ export const routerBasic = {
 
     const script2 = `$('.chin').on('mouseenter', function () {
       //change image src
-      $('.chin').attr('src', '/public/chinchilla2.jpeg')
+      $('.chin').attr('src', '/public/images/chinchilla2.jpeg')
                 .css('cursor', 'pointer')
                 .css('border', '1px solid blue');
     });`;
@@ -90,7 +90,7 @@ export const routerBasic = {
     scriptDiv2(script2);
 
     const script3 = `$('.chin').on('mouseleave', function () {
-      $('.chin').attr('src', '/public/chinchilla.jpeg');
+      $('.chin').attr('src', '/public/images/chinchilla.jpeg');
     });`;
 
     scriptDiv2(script3);
@@ -340,7 +340,7 @@ export const routerBasic = {
           $loader.fadeIn(150);
           //if image is not defined
           if (!image) {
-            image = '/public/tesla/modelS-' + this.colors[0] +'.jpg';
+            image = '/public/images/tesla/modelS-' + this.colors[0] +'.jpg';
   
           }
   
@@ -371,7 +371,7 @@ export const routerBasic = {
           //change function
           $('#changeColor').bind('change', function () {
             const color = $(this).val();
-            const imageSrc = '/public/tesla/modelS-' + color + '.jpg';
+            const imageSrc = '/public/images/tesla/modelS-' + color + '.jpg';
   
             //execute change color function
             teslaView.changeColor(imageSrc);
@@ -412,7 +412,7 @@ export const routerBasic = {
       $('.imgThumb').on('mouseenter', function () {
         //console.log the data-color attribute
         const color = $(this).data('color');
-        const url = '/public/eshop/shirts/large/' + color + '.jpg';
+        const url = '/public/images/eshop/shirts/large/' + color + '.jpg';
         //change the image color color is different in panel-body>img
         if (color !== $('.panel-body').find('img').data('color')) {
           $('#shirtColor').attr('src', url).data('color', color);
@@ -621,7 +621,7 @@ export const routerBasic = {
   
       $('#chatNotification1').on('click', function () {
         chatNotification({
-          image: '/public/chatNotification/Ethan.jpeg',
+          image: '/public/images/chatNotification/Ethan.jpeg',
           name: 'Mimi Martinez',
           location: 'Airdrie, AB'
         });
@@ -645,7 +645,7 @@ export const routerBasic = {
     const script = `(()=> {
       $.ajax({
           type: 'GET',
-          url: '/public/json/register.json',
+          url: '/public/data/json/register.json',
           dataType: 'json',
       }).done(function(data){
           console.log('Success');
@@ -670,7 +670,7 @@ export const routerBasic = {
     (()=> {
       $.ajax({
           type: 'GET',
-          url: '/public/json/register2.json',
+          url: '/public/data/json/register2.json',
           dataType: 'json',
       }).done(function(data){
           console.log('Success');

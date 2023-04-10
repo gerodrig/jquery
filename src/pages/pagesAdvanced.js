@@ -1,5 +1,5 @@
-import javascriptLogo from '/public/javascript.svg';
-import jqueryLogo from '/public/jquery.svg';
+import javascriptLogo from '/public/images/javascript.svg';
+import jqueryLogo from '/public/images/jquery.svg';
 
 export const pagesAdvanced = {
   component: `
@@ -27,7 +27,7 @@ export const pagesAdvanced = {
 
     
     </div>
-    <link rel="stylesheet" href="/styles/pagesAdvanced.css" />`,
+    `,
     section1: {
       title: 'DOM Manipulation',
       subTopics: [
@@ -608,7 +608,7 @@ export const pagesAdvanced = {
           <p>The code is a demonstration of how to use jQuery to show and hide a preloader animation while performing an AJAX request to fetch data from a web API. When the AJAX request is started, the preloader is faded in, and when it is completed, the preloader is delayed by one second and then faded out. If the AJAX request is successful, the response data is logged to the console, and a new HTML element with the ID "users" is added to the page, displaying the JSON data in a formatted code block. If the AJAX request fails, an alert message is displayed.</p>
 
           <div id="preloader" class="text-center">
-            <img src="/public/advanced/preloader.gif" alt="preloader">
+            <img src="/public/images/advanced/preloader.gif" alt="preloader">
           </div>
           <div id="users"></div>
 
@@ -872,7 +872,7 @@ export const pagesAdvanced = {
         title: 'Test if Browser Supports HTML5 Features',
         content: `
           <h1>Test if Browser Supports HTML5 Features</h1>
-          <h2><a href="https://modernizr.com/" target="_blank">Modernizr</h2>
+          <h2><a href="https://modernizr.com/" target="_blank">Modernizr</a></h2>
           <p>The code adds the Modernizr library to the HTML page and checks the support of various features by iterating over the classes in the HTML tag, using Modernizr to detect support and appending the result to a container element on the page. The concept being demonstrated is feature detection using the Modernizr library, which allows web developers to detect whether a user's browser supports various HTML, CSS, and JavaScript features, and adjust the website behavior accordingly.</p>
           <div id="container"></div>
           <style>
@@ -1184,8 +1184,8 @@ export const pagesAdvanced = {
           <p>The code snippet loads the "TwentyTwenty" jQuery plugin, which enables a before-and-after image comparison effect. It appends the required CSS and JavaScript files to the head and body of the document respectively, and initializes the plugin on the "#container" element once the window is fully loaded.</p>
       
           <div id="container" class="twentytwenty-container">
-            <img src="/public/advanced/re4.jpg" alt="image1"  >
-            <img src="/public/advanced/re4-2.jpg" alt="image2" >
+            <img src="/public/images/advanced/re4.jpg" alt="image1"  >
+            <img src="/public/images/advanced/re4-2.jpg" alt="image2" >
           </div>
 
           <style>
